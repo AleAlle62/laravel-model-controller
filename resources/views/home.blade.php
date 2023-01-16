@@ -10,7 +10,11 @@
 <body>
     <h1>HOME</h1>
     @foreach ($movies as $movie)
-        {{ $movie->title }}
+        <ul>
+            <li><h3>{{ $movie->title }}</h3></li>
+            <span >titolo in lingua originale :</span>
+            <span class="or">{{ $movie->original_title }}</span>
+        </ul>
     @endforeach
 </body>
 </html>
